@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Editor de texto</title>
+</head>
+<body>
+    
+    <main>
+        
+        <script src="script.js"> </script>
+
+        <button value="1" onclick="theme(this)" id="theme">theme</button>
+
+        <p class="texts titleText colorText" id="display-text">
+            Text 
+        </p>
+        
+        <textarea id="input-text">Hello World!!</textarea>
+        <br>
+        
+        <div class="texts colorText"> 
+            <span>Cor de texto:</span>
+            <input onchange="color(this)" type="color" name="" id="color">
+            
+            <span>Cor de fundo:</span>
+            <input onchange="background_color(this)" type="color" name="" id="color-back">
+            <br><br>
+
+            <span>Fonte:</span>
+            <select onchange="selectFont(this)" name="" id="select-font">
+                <option value="arial">Arial</option>
+                <option value="time">Times New Roman</option>
+                <option value="franklin">Helvetica</option>
+            </select>
+
+            <span class="colorText" >Tamanho de fonte:</span>
+            <input type="range" value="1" name="" id="sizeFont" onclick="selectRange(this)">
+            <span> Download : </span> 
+
+            <button onclick="printText()">Print this page</button>
+            
+        </div>
+    </main>
+</body>
+</html>
