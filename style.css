@@ -1,5 +1,7 @@
+
 body{
     background-color: #242120;
+    -webkit-print-color-adjust: exact;
 }
 
 #theme {
