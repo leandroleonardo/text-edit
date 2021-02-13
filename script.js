@@ -41,7 +41,7 @@ function theme() {
     let verification = document.getElementById("theme")
     let textColorLetter = document.getElementsByClassName("colorText")
 
-    if(verification.value === "true") {
+    if(verification.value === "false") {
 
         document.body.style.backgroundColor = "#242120"
         
@@ -49,17 +49,18 @@ function theme() {
             textColorLetter[i].style.color = "white"
         }
 
-        verification.value = "false"
+        verification.value = "true"
         
     } else {
-    
+
         for(let i=0; i<textColorLetter.length; i++) {
             textColorLetter[i].style.color = "black"
         }
 
         document.body.style.backgroundColor = "white"
 
-        verification.value = "true"
+        verification.value = "false"
+    
     } 
 }
 

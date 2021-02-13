@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <title>Editor de texto</title>
 </head>
 <body>
@@ -36,9 +39,9 @@
                 <option value="franklin">Helvetica</option>
             </select>
 
-            <span class="colorText" >Tamanho de fonte:</span>
+            <span id="sizeFont" class="colorText" >Tamanho de fonte:</span>
             <input type="range" value="1" name="" id="sizeFont" onclick="selectRange(this)">
-            <span>Baixar texto: </span>
+            <span id="spanDownload">Baixar texto: </span>
             <button class="down-txt" onclick="printText()">click</button>
             
         </div>
