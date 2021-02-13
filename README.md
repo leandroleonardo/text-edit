@@ -1,7 +1,15 @@
 # Editor de texto
 
-Mini editor de texto web.
+<h4>Mini editor de texto web.</h4>
+<hr>
+<h4>Tecnologias utilizadas</h4>
+<ul>
+  <li>html</li>
+  <li>Css</li>
+  <li>Javascript</li>
+</ul>
+<hr>
+<h1>Imagem</h1>
 
-# Teste 
+![Alt ou título da imagem](https://github.com/leandroleonardo/text-edit/blob/main/images/photo.PNG)
 
-https://leandroleonardo.github.io/text-edit/
