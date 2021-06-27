@@ -1,0 +1,61 @@
+[33mcommit fa7e994e6a29d80e737fb605f974da39ff7dd9d9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 74c4966 f1894aa
+Author: Leandro <leandro.assarice@gmail.com>
+Date:   Sat Feb 13 16:24:50 2021 -0300
+
+    Merge branch 'main' of github.com:leandroleonardo/text-edit
+
+[33mcommit 74c49668187d9b65eeff496b7fbfa7efa3528b5d[m
+Author: Leandro <leandro.assarice@gmail.com>
+Date:   Sat Feb 13 16:24:36 2021 -0300
+
+    commit
+
+[33mcommit f1894aaf033b08927bb72b9a4af801610f7c002e[m
+Author: leandroleonardo <57691941+leandroleonardo@users.noreply.github.com>
+Date:   Sat Feb 13 11:11:17 2021 -0300
+
+    Update README.md
+
+[33mcommit 05d27310d98dd631123fb02283b8d9524dad2196[m
+Author: Leandro <leandro.assarice@gmail.com>
+Date:   Sat Feb 13 11:05:34 2021 -0300
+
+    commit
+
+[33mcommit 9a9d5b21e221e4f3eb3004961b862b362b4f718e[m
+Author: leandroleonardo <57691941+leandroleonardo@users.noreply.github.com>
+Date:   Fri Jan 22 16:24:03 2021 -0300
+
+    Update README.md
+
+[33mcommit 011b3fe71fecdc37b113330d5a88f3a85b80776e[m
+Author: Leandro Assarice <leandro.assarice@gmail.com>
+Date:   Fri Jan 22 16:12:01 2021 -0300
+
+    optimization
+
+[33mcommit 93004a774ca42df27aaaad6e12c0e9721101d50d[m
+Merge: cdffc18 1e63696
+Author: Leandro Assarice <leandro.assarice@gmail.com>
+Date:   Fri Jan 22 10:48:06 2021 -0300
+
+    Merge branch 'main' of github.com:leandroleonardo/text-edit into main
+
+[33mcommit cdffc1895f947afa30877509297eeb3e393eb7a7[m
+Author: Leandro Assarice <leandro.assarice@gmail.com>
+Date:   Fri Jan 22 10:44:49 2021 -0300
+
+    fix language
+
+[33mcommit 1e63696493b7a0ea24524cde14c7c586157aa3cb[m
+Author: leandroleonardo <57691941+leandroleonardo@users.noreply.github.com>
+Date:   Thu Jan 21 17:47:05 2021 -0300
+
+    Create README.md
+
+[33mcommit 165cc2b21567362ee999461eee8cd9a3a1f4f436[m
+Author: Leandro Assarice <leandro.assarice@gmail.com>
+Date:   Thu Jan 21 17:07:45 2021 -0300
+
+    Initial commit

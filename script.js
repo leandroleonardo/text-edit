@@ -41,18 +41,19 @@ function selectRange(porcent) {
 }
 
 function theme() {
-
+    
+    let container = document.getElementById("containerTheme")
     let menu = document.getElementById("menu")
     let imgTheme = document.getElementById("theme")
     let titleTxt = document.getElementById("title-text")
 
-    if(this.getAttribute("check") === "false") {
+    if(container.getAttribute("check") === "false") {
 
         document.body.style.backgroundColor = "#353535"
         menu.style.color = "white"
         titleTxt.style.color = "white"
 
-        this.setAttribute("check","true")
+        container.setAttribute("check","true")
         imgTheme.setAttribute("src","./images/sol.png")
 
     } else {
@@ -61,14 +62,7 @@ function theme() {
         menu.style.color = "black"
         document.body.style.backgroundColor = "white"
         
-        this.setAttribute("check","false")
+        container.setAttribute("check","false")
         imgTheme.setAttribute("src","./images/lua.png")
     } 
-}
-
-window.onload = function(){
-
-    let a = document.getElementById("containerTheme")
-    a.addEventListener('click',theme)
-    
 }

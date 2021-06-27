@@ -21,7 +21,7 @@
         <script src="script.js"> </script>
        
         <div check="false" id="containerTheme">
-            <img id="theme" src="/images/lua.png" alt="">
+            <img onclick="theme()" id="theme" src="/images/lua.png" alt="">
         </div>
         
         <br>
@@ -34,7 +34,7 @@
         <section id="menu">
 
             <span>Cor de texto:</span>
-            <input onblur="color(this)" type="color" name="" id="color">
+            <input onchange="color(this)" type="color" name="" id="color">
             
             <span>Cor de fundo:</span>
             <input onchange="background_color(this)" type="color" name="" id="color-back">
@@ -50,11 +50,7 @@
             </select>
 
             <span>Tamanho de fonte:</span>
-            <input type="range" value="1" id="sizeFont" onchange="selectRange(this)">
-
-            <div id="codeCompilater">
-                
-            </div>
+            <input type="range" value="1" onchange="selectRange(this)">
 
         </section>
             
