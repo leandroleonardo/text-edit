@@ -1,6 +1,4 @@
 body{
-    color: black;
-    background-color: white;
     -webkit-print-color-adjust: exact;
     font-family: 'Poppins', sans-serif;
 }
@@ -41,8 +39,7 @@ body{
     outline: 0;
 }
 
-
-/* Animation */
+/* animation */
 
 @keyframes widthScreen{
     

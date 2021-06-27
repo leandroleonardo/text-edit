@@ -54,7 +54,7 @@ function theme() {
         titleTxt.style.color = "white"
 
         container.setAttribute("check","true")
-        imgTheme.setAttribute("src","./images/sol.png")
+        imgTheme.setAttribute("src","./assets/sun.png")
 
     } else {
 
@@ -63,6 +63,6 @@ function theme() {
         document.body.style.backgroundColor = "white"
         
         container.setAttribute("check","false")
-        imgTheme.setAttribute("src","./images/lua.png")
+        imgTheme.setAttribute("src","./assets/moon.png")
     } 
 }
