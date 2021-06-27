@@ -4,8 +4,13 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <title>Editor de texto</title>
 </head>
@@ -14,35 +19,44 @@
     <main>
         
         <script src="script.js"> </script>
-
-        <button value="false" onclick="theme()" id="theme">tema</button>
-            
-        <p class="texts titleText colorText" id="display-text">
-            Texto
-        </p>
+       
+        <div check="false" id="containerTheme">
+            <img id="theme" src="/images/lua.png" alt="">
+        </div>
         
-        <textarea id="input-text">Hello World!!</textarea>
         <br>
-        
-        <div class="texts colorText"> 
+
+        <section id="text"> 
+            <h1 id="title-text">Texto_</h1>
+            <textarea id="input-text">Hello World!!</textarea>
+        </section>
+            
+        <section id="menu">
+
             <span>Cor de texto:</span>
-            <input onchange="color(this)" type="color" name="" id="color">
+            <input onblur="color(this)" type="color" name="" id="color">
             
             <span>Cor de fundo:</span>
             <input onchange="background_color(this)" type="color" name="" id="color-back">
             <br><br>
 
             <span>Fonte:</span>
+
             <select onchange="selectFont(this)" name="" id="select-font">
                 <option value="arial">Arial</option>
                 <option value="time">Times New Roman</option>
                 <option value="franklin">Helvetica</option>
+                <option value="Poppins">Poppins</option>
             </select>
 
-            <span id="sizeFont" class="colorText" >Tamanho de fonte:</span>
-            <input type="range" value="1" name="" id="sizeFont" onclick="selectRange(this)">
-            <span id="spanDownload">Baixar texto: </span>
-            <button class="down-txt" onclick="printText()">click</button>
+            <span>Tamanho de fonte:</span>
+            <input type="range" value="1" id="sizeFont" onchange="selectRange(this)">
+
+            <div id="codeCompilater">
+                
+            </div>
+
+        </section>
             
         </div>
     </main>

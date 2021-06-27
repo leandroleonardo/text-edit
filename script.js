@@ -29,6 +29,10 @@ function selectFont(textFont) {
             text().style.fontFamily = "Franklin Gothic Medium"
         break;
 
+        case "Poppins":
+            text().style.fontFamily = "Poppins"
+        break;
+
     }
 }
 
@@ -38,49 +42,33 @@ function selectRange(porcent) {
 
 function theme() {
 
-    let verification = document.getElementById("theme")
-    let textColorLetter = document.getElementsByClassName("colorText")
+    let menu = document.getElementById("menu")
+    let imgTheme = document.getElementById("theme")
+    let titleTxt = document.getElementById("title-text")
 
-    if(verification.value === "false") {
+    if(this.getAttribute("check") === "false") {
 
-        document.body.style.backgroundColor = "#242120"
-        
-        for(let i=0; i<textColorLetter.length; i++) {
-            textColorLetter[i].style.color = "white"
-        }
+        document.body.style.backgroundColor = "#353535"
+        menu.style.color = "white"
+        titleTxt.style.color = "white"
 
-        verification.value = "true"
-        
+        this.setAttribute("check","true")
+        imgTheme.setAttribute("src","./images/sol.png")
+
     } else {
 
-        for(let i=0; i<textColorLetter.length; i++) {
-            textColorLetter[i].style.color = "black"
-        }
-
+        titleTxt.style.color = "black"
+        menu.style.color = "black"
         document.body.style.backgroundColor = "white"
-
-        verification.value = "false"
-    
+        
+        this.setAttribute("check","false")
+        imgTheme.setAttribute("src","./images/lua.png")
     } 
 }
 
-function printText() {
+window.onload = function(){
 
-    let textColorLetter = document.getElementsByClassName("colorText")
-   
-    for(let i=0; i<textColorLetter.length; i++) {
-        textColorLetter[i].style.opacity = "0"
-    }
-
-    document.getElementById("theme").style.opacity = "0"
-
-    alert("Ative os elementos gráficos de plano de fundo")
-
-    window.print()
-
-    for(let i=0; i<textColorLetter.length; i++) {
-        textColorLetter[i].style.opacity = "1"
-    }
-
-    document.getElementById("theme").style.opacity = "1"
+    let a = document.getElementById("containerTheme")
+    a.addEventListener('click',theme)
+    
 }
