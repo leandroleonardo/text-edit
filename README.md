@@ -11,5 +11,5 @@
 <hr>
 <h1>Imagem</h1>
 
-![Alt ou título da imagem](https://github.com/leandroleonardo/text-edit/blob/main/images/photo.PNG)
+![Alt ou título da imagem](https://github.com/leandroleonardo/text-edit/blob/main/assets/photo.PNG)
 
